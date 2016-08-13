@@ -1,0 +1,7 @@
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCDk7n6Bo2c3v0Sb2TjQzwj9bWq
+cPMHss0S8gqpd0Qdqjvtam9ECECD2kTY8XfvX+CDuc6c38PdkOjhRUXa9WZc2jBi
+Vll3vRzbHMyBJxXJsqo0YwyiWU8Gp5ZTzmP/CYMSENiZdqpC3b+C7h5UH7jwbQnn
+ztf6/F38mCkEXsj9ZQIDAQAB
+-----END PUBLIC KEY-----"{'appid':'5000100626','appuserid':'蓝色的洛克贝','cporderid':'28766','cpprivate':'8002','currency':'RMB','feetype':2,'money':1.00,'paytype':401,'result':0,'transid':'32021607261308051282','transtime':'2016-07-26 13:08:14','transtype':0,'waresid':2}"
+verify result:
