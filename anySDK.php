@@ -1,25 +1,29 @@
 <?php
 
 class anySDK {
-/*
-String appKey = "38CFB482-416D-C1CD-B725-7AFC46476F0E";
-String appSecret = "e7eef6079c5c6fda3df840e578213adc";
-String privateKey = "1ADA80ADB24697D08E2D729553E57E0F";
-*/
-    private $keyPrivate="1ADA80ADB24697D08E2D729553E57E0F";
-    private $keyEnhance ="MGZkOWIwMDU4ZGQ4Nzc5NTczYmU";
-    private $dirLog = "";
+  private $arrConfigSDK;
+  private $dirBaseSDK;
+  private $dirLog;
+
+  function __construct(){
+      $this->dirBaseSDK = dirname(__FILE__)."/AnySDK";
+      $this->getConfigInit();
+  }
+
+  function getConfigInit(){
+      $this->arrConfigSDK = require_once $this->dirBaseSDK."/config.inc.php";
+  }
 
     function __construct($keyPrivate="",$keyEnhance=""){
         if(!empty($keyPrivate) && !empty($keyEnhance)){
-            $this->keyPrivate = $keyPrivate;
-            $this->keyEnhance = $keyEnhance;
+            $this->keyPrivate = $this->arrConfigSDK['keyPrivate'];
+            $this->keyEnhance = $this->arrConfigSDK['keyEnhance'];
         }
         $this->getLogInit();
     }
 
     function getLogInit(){
-        if($this->dirLog == ""){
+        if(empty($this->dirLog)){
             $this->dirLog = dirname(__FILE__)."/log/anySDK.txt";
         }
     }
